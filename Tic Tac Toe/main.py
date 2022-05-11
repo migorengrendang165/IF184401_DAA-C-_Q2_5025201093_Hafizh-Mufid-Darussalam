@@ -110,7 +110,10 @@ while True:
     if user != player and not game_over:
       if ai_turn:
         time.sleep(0.5);
-        move = ttt.minimax(board);
+        if ttt.difficulty():
+          move = ttt.minimax(board);  # Give the AI the optimal move        
+        else:
+          move = ttt.maximin(board); # Give the AI the unoptimal move
         board = ttt.results(board, move);
         ai_turn = False;
       else:
