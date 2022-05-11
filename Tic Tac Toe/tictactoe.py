@@ -1,5 +1,6 @@
 import math
 import copy
+import random
 
 X = "X";
 O = "O";
@@ -109,8 +110,13 @@ def utility(board):
     return 0;
 
 
+def difficulty(percent=55):
+  """Returns True with a certain percentage of possibility, used to make the AI beatable."""
+  return random.randrange(100) < percent;
+
+  
 def minimax(board):
-  """Returns the optimal action for teh current player on the board."""
+  """Returns the optimal action for the current player on the board."""
 
   if terminal(board):
     return None;
@@ -138,6 +144,39 @@ def minimax(board):
       if max_val < score:
         score = max_val;
         action_to_take = action;
+        
+    return action_to_take;
+
+
+def maximin(board):
+  """Returns the unoptimal action for the current player on the board."""
+
+  if terminal(board):
+    return None;
+
+  if player(board) == X:
+    score = math.inf;
+    action_to_take = None;
+    
+    for action in actions(board):
+      max_val = maxvalue(results(board, action));
+      
+      if max_val < score:
+        score = max_val;
+        action_to_take = action;
+        
+    return action_to_take;
+
+  elif player(board) == O:
+    score = -math.inf;
+    action_to_take = None;
+
+    for action in actions(board):
+      min_val = minvalue(results(board, action));
+
+      if min_val > score:
+        score = min_val;
+        action_to_take = action; 
         
     return action_to_take;
 
