@@ -454,3 +454,5 @@ https://subakti.com/?page_id=3619
 
 https://socs.binus.ac.id/2013/04/23/uninformed-search-dan-informed-search/
 
+# Little note
+I would like to suggest using replit to run the program. That doesn't mean the program is broken or something. It's just me that I had tried using replit and personally it's very easy for me.
