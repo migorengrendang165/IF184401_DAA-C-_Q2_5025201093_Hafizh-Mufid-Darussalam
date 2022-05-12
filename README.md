@@ -440,6 +440,11 @@ Here’s another gameplay. We are playing as O, same as the previous image, but 
 
 ![image](https://user-images.githubusercontent.com/79137636/168089472-fa159178-222b-4501-b731-04a634194552.png)
 
+# Demo
+Here's a YouTube link for the demonstration of the program:
+
+https://www.youtube.com/watch?v=bJRGJGH3TeY
+
 # References:
 https://medium.com/analytics-vidhya/minimax-algorithm-in-tic-tac-toe-adversarial-search-example-702c7c1030eb 
 
