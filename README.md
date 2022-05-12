@@ -1,5 +1,9 @@
-# Quiz_2_DAA_C_2022
-Quiz 2 Design and Analysis of Algorithms (DAA) 2022 class C Institut Teknologi Sepuluh Nopember 20 April 2022 - 12 May 2022.
+# Quiz 2 Design and Analysis of Algorithms (DAA)
+ class C 
+ 
+ Institut Teknologi Sepuluh Nopember
+ 
+ 20 April 2022 - 12 May 2022
 
 **Author:**
 
