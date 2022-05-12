@@ -17,7 +17,7 @@ largeFont = pygame.font.Font("OpenSans-Regular.ttf", 40);
 moveFont = pygame.font.Font("OpenSans-Regular.ttf", 60);
 
 user = None;
-board = ttt.initialState();
+board = ttt.initial_state();
 ai_turn = False;
 
 while True:
@@ -110,10 +110,10 @@ while True:
     if user != player and not game_over:
       if ai_turn:
         time.sleep(0.5);
-        if ttt.difficulty():
-          move = ttt.minimax(board);  # Give the AI the optimal move        
-        else:
-          move = ttt.maximin(board); # Give the AI the unoptimal move
+        #if ttt.difficulty():
+        #  move = ttt.minimax(board);          
+        #else:
+        move = ttt.maximin(board);
         board = ttt.results(board, move);
         ai_turn = False;
       else:
