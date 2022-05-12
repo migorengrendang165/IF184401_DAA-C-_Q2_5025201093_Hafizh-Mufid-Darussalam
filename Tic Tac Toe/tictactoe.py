@@ -6,7 +6,7 @@ X = "X";
 O = "O";
 EMPTY = None;
 
-def initialState():
+def initial_state():
   """Returns the starting state of the board where all the 9 slots from the 3x3 board is empty."""
   
   return [[EMPTY, EMPTY, EMPTY], 
@@ -110,7 +110,7 @@ def utility(board):
     return 0;
 
 
-def difficulty(percent=55):
+def difficulty(percent=70):
   """Returns True with a certain percentage of possibility, used to make the AI beatable."""
   return random.randrange(100) < percent;
 
